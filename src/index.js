@@ -14,7 +14,7 @@ const port = process.env.PORT || 3002;
 app.use(
   cors({
     // The Origin header never includes a trailing slash.
-    origin: "http://localhost:5173/",
+    origin: ["http://localhost:5173"],
     methods: ["GET", "POST", "PUT", "DELETE"],
   }),
 );
